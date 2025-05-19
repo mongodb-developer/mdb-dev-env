@@ -9,7 +9,7 @@ https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/8.0 multiverse" | \
 
 # Update and install mongosh
 sudo apt-get update
-sudo apt-get install -y mongodb-mongosh mongo-tools
+sudo apt-get install -y mongodb-mongosh
 
 # MONGODB_URI="mongodb://admin:mongodb@mongodb:27017"
 
