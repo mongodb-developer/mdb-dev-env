@@ -1,0 +1,1 @@
+mongorestore --drop --uri="mongodb://admin:mongodb@localhost:27017/libary?authsource=admin&w=1" --archive=dump.archive --nsInclude="*"
