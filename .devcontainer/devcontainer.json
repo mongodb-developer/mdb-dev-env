@@ -1,20 +1,14 @@
 {
     "name": "MongoDB Developer Instance",
     "dockerComposeFile": "docker-compose.yml",
-    "service": "lab-runner",
-    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "service": "mongodb",
+    "workspaceFolder": "/workspaces",
     "forwardPorts": [
-        8888,
         27017
     ],
     "hostRequirements": {
-        "cpus": 4
+        "cpus": 1
     },
-    "containerEnv": {
-        "MONGODB_URI": "mongodb://admin:mongodb@mongodb:27017/"
-    },
-    // "updateContentCommand": "python3 -m pip install -r requirements.txt",
-    "postCreateCommand": "chmod +x .devcontainer/setup.sh && ./.devcontainer/setup.sh",
     "customizations": {
         "codespaces": {
             "openFiles": []
